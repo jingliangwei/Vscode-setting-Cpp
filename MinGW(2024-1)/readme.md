@@ -13,4 +13,9 @@
 （5）tasks.json 中"args": [...],中的"E:\\vs code\\2024-1-15\\.vscode\\exe\\a.exe"为编译生成的可执行文件（.exe）存放路径
 
 2. 这些配置文件将编译源文件生成的可执行文件（.exe）统一存放于\.vscode\exe文件夹中，以保持主工作区只有源文件，干净利落。
-3. 将可执行文件（.exe）统一命名为“a.exe”可以解决原来源文件使用中文命名时无法编译的问题。            
+3. 将可执行文件（.exe）统一命名为“a.exe”可以解决原来源文件使用中文命名时无法编译的问题。
+
+更新（2024-3-15）：由于在使用时遇到了当使用较大内存空间（如使用了大容量1e7数组）会出现栈溢出的报错，
+于是从网上找到了解决方法，文章在此[how to increase max stack size in c using vscode](https://stackoverflow.com/questions/63134299/how-to-increase-max-stack-size-in-c-using-vscode)
+
+并按文章操作更新了task.json文件为task1.json。
